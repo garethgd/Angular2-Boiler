@@ -1,0 +1,18 @@
+.foot_wrap {
+  font-family: 'Unica One', cursive;
+  color: #fb9146;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0px; }
+
+.foot_wrap a {
+  font-family: 'Unica One', cursive;
+  color: #fb9146;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0px; }
+
+.dark-bg {
+  background-color: #303030; }
+
+/*# sourceMappingURL=footer.component.css.map */

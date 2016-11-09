@@ -1,0 +1,27 @@
+.product-list {
+  background: white;
+  height: 500px;
+  .product {
+    text-align: center;
+    width: 32%;
+    display: inline-block;
+    img {
+      margin: 0 auto;
+      width: 70px;
+      height: auto;
+    }
+    h1 {
+      font: 24px/24px 'Unica One', sans-serif;
+      text-transform: uppercase;
+      color: #c31;
+      margin: 20px 20px 30px;
+    }
+    p {
+      font: 16px/24px 'Vollkorn', serif;
+    color: #333;
+   
+    text-align: justify;
+    margin: 0 auto;
+    }
+  }
+}

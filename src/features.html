@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<app-header> </app-header>
+
+<body> 
+<div class = "header col-lg-12 dark-bg">
+
+<ul class= "nav-contact">
+<li> English</li>
+<li> </li>
+<li> <span> <img src=""> +353.860546916 </span></li>
+</ul>
+<div class="container">
+<nav>
+ <ul class="nav-left">
+  <li><a href> Products </a></li>
+  <li> <a href> Info </li>
+ </ul>
+ <a href="Eposible.html" class ="logo" > Eposible</a> 
+ <ul class="nav-right">
+  <li> <a href> About </a></li>
+  <li> <a href> Contact </a></li>
+</div>
+</ul>
+</nav>
+</div>
+
+
+<div class = "description dark-bg">
+ <div class="container container-pad">
+ <div class="third opacity">
+				
+				<a href="http://archie-wilkinson.co.uk/category/bikes/">
+				<img src="images/ipad-1.jpg">
+				<div class="text-box grey-bg"><p>Specs</p></div>
+				</a>
+				
+			</div>
+
+			<div class="third opacity">
+				
+				<a href="http://archie-wilkinson.co.uk/category/bikes/">
+				<img src="images/ipad-2.jpg">
+				<div class="text-box grey-bg"><p>Features</p></div>
+				</a>
+				
+			</div>
+
+			<div class="third opacity">
+				
+				<a href="http://archie-wilkinson.co.uk/category/bikes/">
+				<img src="images/ipad-3.jpg">
+				<div class="text-box grey-bg"><p>Packages</p></div>
+				</a>
+				
+			</div>
+ <div class="captions">
+
+ </div>
+ </div>
+
+<div class="icons-bg">
+<div class="container icons-bg">
+<div class = "icons-holder"> 
+
+<p class= "ion-ios-pint-outline">
+<p class= "ion-ios-nutrition-outline">
+<p class= "ion-ios-wineglass-outline">
+ </div>
+<div class = "icons-desc left">
+<p>This Eposible software enables its users to have a retail infastructure that runs smoothly and efficiently increasing over all PPP (Productivity per hour worked)</p>
+<p>This Eposible software enables its users to have a retail infastructure that runs smoothly and efficiently increasing over all PPP (Productivity per hour worked)</p>
+<p>Eposible provides ideal software for your resturatant retailing business providing a smooth infracstructure for all your purchases, invoices and reciepts.</p>
+</div>	
+
+<div class = "icons-desc right">
+<p>This Eposible software enables its users to have a retail infastructure that runs smoothly and efficiently increasing over all PPP (Productivity per hour worked)</p>
+<p>This Eposible software enables its users to have a retail infastructure that runs smoothly and efficiently increasing over all PPP (Productivity per hour worked)</p>
+<p>Eposible provides ideal software for your resturatant retailing business providing a smooth infracstructure for all your purchases, invoices and reciepts.</p>
+</div>
+	
+</div>
+</p>
+
+</div>
+
+<div class = "product-bg ">
+<div id = "products">
+  
+<product-item-list> </product-item-list>
+<div  class = "list-software">
+    <product :product="product">  </product>
+    <img src="images/tablet-tea.jpg"> 
+    <h1> {{item | uppercase}} <h1>
+  </div>
+
+  </div>
+
+
+<img  class="col-lg-8 col-sm-6 col-md-8" src="images/tablet-tea.jpg">
+<section class="product-detail-purchase" >
+
+    <h1>{{feature.product.name}}</h1>
+        <div  class="product-price product-detail-price">
+         <div class="price-column product-detail-price-column">
+              
+                <span id="markedDown_full_Price" class="price"><h1> {{feature.product.price | currency}} </h1>
+                <div class="product-info-wrapper">
+            <div class="style-number-title">
+                Software Number<span> {{feature.product.softwareVersion}}</span>
+            </div>
+            <div class="product-description">
+                <div class="description-title-small">
+                    Description</div>
+             
+		                    <p>
+		                       {{feature.product.description}}</p>
+		                <p>
+		                       {{feature.product.description}}</p><p>
+		                       {{feature.product.description}}</p><p>
+		                       {{feature.product.description}}</p>
+		              
+		                
+                    </div>
+            
+            
+                </div>
+                
+               
+
+                 <!-- .product-style-selector -->
+                <div class="sizes">
+                <div class="size-dropdown " data-module="productSizes" style="display:none">
+                        <div class="content-select basic-content-select">
+	                		<div class="selectricWrapper selectric-custom selectric-size-select selectric-_disable-mobile selectric-noSizeDropDown"><div class="selectricHideSelect"><select name="size" class="custom size-select _disable-mobile noSizeDropDown" data-no-size="807358649" tabindex="0">
+								    <option value="-1" selected="selected">
+	                                    Select Size</option>
+								<option value="807358649" data-copy="U" data-copy-device="U&nbsp;" data-available="true" class="" selected="selected">U</option></select></div><div class="selectric"><p class="label">U</p><b class="button">▾</b></div><div class="selectricItems" tabindex="-1"><div class="selectricScroll"><ul><li class="">
+	                                    Select Size</li><li class="selected last">
+                        <span class="sizes-item-header">Size: </span>
+                        <span class="sizes-item-value ">U</span>  
+                    </li></ul></div></div><input class="selectricInput" tabindex="0"></div>
+                        </div>
+                    </div>
+                 <!-- Product size handlebars template -->
+                    <script id="product-size-template" type="text/x-handlebars-template">
+                        {{#if itemHeader}}
+                        <span class="sizes-item-header">Size: </span>
+                        <span class="sizes-item-value {{#unless itemAvailable}}sizes-item-value-disabled{{/unless}}">{{itemValue}}</span> {{#unless itemAvailable}}<span class="sizes-item-not-available"> | Find in store</span>{{/unless}} {{else}}
+                        <span class="sizes-item-value">{{itemValue}} </span>
+                        <span class="size-text">Size</span> {{/if}}
+                    </script>
+                    <!-- End template -->
+
+					 <div style="width: auto;">
+	                    <div class="size-guide noSizeDropDown" style="display:none">
+	                        <a class="size-guide-link overlay-open" href="#size-guide-overlay-shoes">
+	                            Size guide</a>
+	                    </div>
+	                    </div>
+                </div>
+                <p class="shipping-info" style="display: block;">Your selection is available for immediate purchase online. </p>
+                <button class="product-buy-btn"  type="submit">
+                    Add to Cart</button>
+                <a class="find-in-store-cta find-in-store overlay-open" href="#find-in-store-overlay">
+                    Find in store</a>
+                </form>
+                
+            <a class="order-by-phone-cta" href="tel:+1.877.482.2430">
+	               			Order by phone&nbsp;</a>
+	               <div class="save-help" data-module="tooltip">
+                <ul>
+               
+
+                   
+                    </li>
+                </ul>
+            </div>
+	
+            </div>
+           
+           
+            </div>
+        </div>
+	</span>
+                <div class="hide" id="price-label"><span class="price-label"><p>{{feature.product.description}} </p>
+	</span>
+
+	<div class="style-number-title">
+                Software Number<span> 447632 DRW1T 9022</span>
+            </div>
+	</div>
+            </div>
+	     <div class="print-column product-detail-print-column">
+                <a class="print-link product-detail-print-link" href="/us/en/-p-447632DRW1T7223/print" target="_blank">Print</a>
+            </div>
+        </div>
+
+</div>  
+
+
+<div class = "items col-lg-12 dark-bg">
+
+	<div class="item">
+		<span> </span>
+	</div>
+
+	<div class="item">
+		<span> </span>
+	</div>
+
+	<div class="item">
+		<span> </span>
+	</div>
+
+</div>
+
+
+</div>
+
+<div class="footer">
+
+</div>
+    
+    
+  </body>
+</html>

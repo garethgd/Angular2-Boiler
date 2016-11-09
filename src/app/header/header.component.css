@@ -1,0 +1,54 @@
+host{
+
+
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12px; 
+}
+
+  .header .nav-contact {
+    float: left;
+    padding: 1.2em 0 1.4em 0;
+    li: nth-child(1);
+      li-text-decoration: none;
+      li-color: #ffffff;
+      li-padding: 0 2em;
+      li-font-weight: 800;
+      li-font-size: 0.9em; }
+    .header .nav-contact li:nth-child(3) {
+      font-family: courier;
+      font-size: 14px;
+      color: orange; }
+  .header a.logo {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0 2em;
+    font-weight: 800;
+    font-size: 1em; }
+    .header a.logo:hover {
+      color: #fb9146;
+      cursor: pointer; }
+  .header nav {
+    padding: 1.2em 0 1.4em 0;
+    text-align: center; }
+  .header .nav-left {
+    float: left;
+    text-align: left; }
+  .header .nav-right {
+    float: right;
+    text-align: right; }
+  .header ul {
+    list-style: none; }
+    .header ul li {
+      display: inline;
+      color: white; }
+      .header ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: 0 2em;
+        font-weight: 800;
+        font-size: 0.9em; }
+        .header ul li a:hover {
+          color: #fb9146;
+          cursor: pointer; }

@@ -1,0 +1,271 @@
+.right {
+  float: right; }
+  .right p {
+    float: right; }
+
+.left {
+  float: left; }
+
+.dark-bg {
+  background-color: #303030; }
+
+.grey-bg {
+  background-color: #4c4c4c; }
+
+.product-bg {
+  background-color: #303030;
+  height: 1300px;
+  color: white;
+  height: 1762px; }
+  .product-bg p {
+    color: white; }
+  .product-bg img {
+    padding: 50px;
+    top: 8%; }
+
+body {
+  font-family: 'Raleway', sans-serif !important; }
+
+.header {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12px; }
+  .header .nav-contact {
+    float: left;
+    padding: 1.2em 0 1.4em 0;
+    li: nth-child(1);
+      li-text-decoration: none;
+      li-color: #ffffff;
+      li-padding: 0 2em;
+      li-font-weight: 800;
+      li-font-size: 0.9em; }
+    .header .nav-contact li:nth-child(3) {
+      font-family: courier;
+      font-size: 14px;
+      color: orange; }
+  .header a.logo {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0 2em;
+    font-weight: 800;
+    font-size: 1em; }
+    .header a.logo:hover {
+      color: #fb9146;
+      cursor: pointer; }
+  .header nav {
+    padding: 1.2em 0 1.4em 0;
+    text-align: center; }
+  .header .nav-left {
+    float: left;
+    text-align: left; }
+  .header .nav-right {
+    float: right;
+    text-align: right; }
+  .header ul {
+    list-style: none; }
+    .header ul li {
+      display: inline;
+      color: white; }
+      .header ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: 0 2em;
+        font-weight: 800;
+        font-size: 0.9em; }
+        .header ul li a:hover {
+          color: #fb9146;
+          cursor: pointer; }
+
+.description {
+  height: auto; }
+  .description .container-pad {
+    padding: 2em 0; }
+  .description .overlay h1 {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    top: -20px;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 20px;
+    text-transform: uppercase; }
+  .description .overlay > div {
+    position: absolute;
+    top: 36%;
+    margin: 0 auto;
+    border: 1px solid white;
+    height: 70px;
+    margin: 0 auto;
+    opacity: 0;
+    width: 200px; }
+  .description .third {
+    width: 33.3%;
+    float: left;
+    padding: 1em;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: 500;
+    text-align: center; }
+    .description .third:hover .overlay h1 {
+      margin-bottom: 20px;
+      top: 5px;
+      bottom: 0;
+      color: white;
+      letter-spacing: 3px;
+      transition: 2000;
+      transition: -webkit-transform 2s;
+      opacity: 1; }
+    .description .third:hover .overlay > div {
+      transform: translateX(50%);
+      transition: -webkit-transform 2s;
+      opacity: 1; }
+    .description .third:hover .overlay:before {
+      position: absolute;
+      height: 240px;
+      width: 93%;
+      opacity: 0.5;
+      display: block;
+      content: '';
+      background-color: #fb9146; }
+    .description .third img {
+      height: 239px; }
+    .description .third .text-box {
+      width: 100%;
+      padding: 1em;
+      margin: -1em 0 0 0;
+      font-weight: 700;
+      letter-spacing: 0.2em; }
+      .description .third .text-box p {
+        color: #ffffff;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 1em 0 0 0;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 3px; }
+    .description .third img {
+      width: 100%; }
+
+.icons-bg {
+  background-color: #CCCCB8;
+  padding: 15px 0 15px 0; }
+  .icons-bg .icons-holder {
+    display: inline-block;
+    width: 157px;
+    margin: 0 auto; }
+    .icons-bg .icons-holder p {
+      font-size: 90px;
+      display: block;
+      width: auto;
+      text-align: center;
+      padding: 30px 0 0 0; }
+  .icons-bg p {
+    text-decoration: none;
+    padding: 0 2em;
+    width: 32%;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 1em 0 0 0;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px; }
+
+.icons-desc {
+  font-size: 14px;
+  width: 43%; }
+  .icons-desc p {
+    width: 73%;
+    /* padding-left: 138px; */
+    padding-top: 50px; }
+
+.icon-container {
+  display: inline-block;
+  font-size: 120px;
+  width: 32.9%;
+  text-align: center; }
+
+.hero {
+  background-image: url(../images/ipad-2.jpg);
+  height: 1257px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .hero .banner-text {
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: .3em;
+    margin-bottom: 1em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 38%; }
+
+.list-software {
+  padding: 40px;
+  display: inline-block; }
+  .list-software img {
+    width: 80%;
+    float: left;
+    padding: 0; }
+  .list-software h1 {
+    font-size: 30px;
+    color: #fb9146;
+    margin: 9px 0 10px 0;
+    line-height: 29px; }
+
+.product-detail-purchase {
+  display: inline-block;
+  margin-top: 10%;
+  width: 306px;
+  float: left; }
+  .product-detail-purchase h1 {
+    font-size: 30px;
+    color: #fb9146;
+    margin: 9px 0 10px 0;
+    line-height: 29px; }
+    .product-detail-purchase h1 span h1 {
+      color: #CCCCB8; }
+  .product-detail-purchase .style-number-title span {
+    color: #fb9146; }
+  .product-detail-purchase .purchase-column .style-number-title {
+    line-height: 22px;
+    padding: 7px 0; }
+  .product-detail-purchase .product-buy-btn {
+    box-sizing: border-box;
+    font-family: Futura-400-normal, Helvetica, Arial, san-serif;
+    font-style: normal;
+    font-weight: 400;
+    -webkit-border-radius: 0;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 12px;
+    line-height: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fb9146;
+    border-color: #fb9146;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 6px auto;
+    padding: 15px;
+    width: 100%; }
+  .product-detail-purchase .price h1 {
+    border-bottom: 1px solid #c8c6c5;
+    padding-bottom: 15px;
+    color: white;
+    font-family: monospace; }
+
+/*# sourceMappingURL=global.css.map */
