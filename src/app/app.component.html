@@ -1,7 +1,30 @@
-  <app-header></app-header>
-  <app-login-modal> </app-login-modal>
-  <app-login> </app-login>
-  <app-navigation></app-navigation>
-  <app-whiskey-list> </app-whiskey-list>
-  <app-whiskey-features> </app-whiskey-features>
-  <app-footer> </app-footer>
+<app-header>
+
+</app-header>
+
+<app-login-modal> </app-login-modal>
+
+<app-login> </app-login>
+
+<app-navigation
+    [whiskeyName]="whiskyName" 
+    (onNameChanged)="setWhiskeyName($event)"> 
+    
+</app-navigation>
+
+  <app-login-modal >
+    
+  </app-login-modal >
+  
+  {{whiskeyName}}
+
+
+  
+
+<app-whiskey-list> </app-whiskey-list>
+
+<app-whiskey-features> </app-whiskey-features>
+
+<app-footer> </app-footer>
+
+

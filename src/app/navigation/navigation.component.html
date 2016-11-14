@@ -1,15 +1,24 @@
 <div class="header col-lg-12 dark-bg">
 
   <ul class="nav-contact">
-
-    <button type="button" (click)="modal.open()"data-toggle="modal" data-target="#login-modal">	<li>Login</li>		</button>
+	   <!--<alert type="success">hello</alert>-->
+    <!--<button class="btn btn-primary" (click)="lgModal.show()"><li>Login</li>	</button>	-->
+	 <button class="btn btn-primary" (click)="setWhiskeyName('jameson')">
+		 <li>Login</li>	</button>	
 
   </ul>
 
-  <div class="container">
-
+  <div class="container" >
+   
+    <input [(ngModel)]="whiskeyName" />
+	<input [(ngModel)]="currentUser.username" />
     <nav>
-
+<p style="color:white" ngFor="let char of whiskeyName.split(''), let i = index"
+  		[hidden] = "whiskeyName === 'Angular1' ">
+  			{{ i }} - {{ char }}
+			  {{currentUser.age}} years old. 
+	</p>
+	<button (click) ="incrementAge()"></button>
       <ul class="nav-left">
 
         <li>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -12,4 +13,10 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
 
+registerUser(fname, lname, email, phone , country , address, billingAddress, sameAddress ){
+    if(sameAddress == true)
+    {
+      billingAddress == sameAddress;
+    }
+  }
 }
