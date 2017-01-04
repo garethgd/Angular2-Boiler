@@ -6,17 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
-import { NavigationComponent } from './navigation/navigation.component';
+import { LayoutModule } from './layout/layout.module';
 import { FooterComponent } from './layout/footer/footer.component';
-import { ProfileComponent } from './profile/profile.component';
-import { WhiskeyListComponent } from './whiskey-list/whiskey-list.component';
-import { WhiskeyFeaturesComponent } from './whiskey-features/whiskey-features.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { WhiskeysModule } from './whiskeys/whiskeys.module';
+import { ActionsModule } from './actions/actions.module';
+
 import { LoginModalComponent } from './login-modal/login-modal.component';
 import { RouterModule } from '@angular/router';
-import { MyNewComponentComponent } from './my-new-component/my-new-component.component';
-
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const rootRouting : ModuleWithProviders = RouterModule.forRoot([
 {
@@ -36,24 +33,40 @@ const rootRouting : ModuleWithProviders = RouterModule.forRoot([
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    NavigationComponent,
-    FooterComponent,
-    WhiskeyListComponent,
-    WhiskeyFeaturesComponent,
-    LoginComponent,
-    RegisterComponent,
-    LoginModalComponent,
-    ProfileComponent,
-    MyNewComponentComponent,
+    LayoutModule,
+    WhiskeysModule,
+    ActionsModule,
+    LoginModalComponent, 
+    
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AlertModule,
-   
-    rootRouting
+    rootRouting,
+    RouterModule.forRoot(
+      [
+        {
+          path: 'register',
+          component: RegisterComponent
+        },
+        {
+          path: 'profile',
+          component: ProfileComponent
+        }
+        ,
+        {
+          path: 'login',
+          component: LoginComponent
+        },
+        {
+          path: '**',
+          component: NotFoundComponent
+        }
+
+      ]
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
