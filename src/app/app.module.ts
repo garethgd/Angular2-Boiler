@@ -15,6 +15,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginModalComponent } from './login-modal/login-modal.component';
 import { RouterModule } from '@angular/router';
+import { MyNewComponentComponent } from './my-new-component/my-new-component.component';
 
 
 const rootRouting : ModuleWithProviders = RouterModule.forRoot([
@@ -22,7 +23,10 @@ const rootRouting : ModuleWithProviders = RouterModule.forRoot([
   path: '',
   component: LoginComponent
 },
-
+{
+  path: 'register',
+  component: RegisterComponent
+},
 {
   path: 'profile',
   component: ProfileComponent
@@ -41,6 +45,7 @@ const rootRouting : ModuleWithProviders = RouterModule.forRoot([
     RegisterComponent,
     LoginModalComponent,
     ProfileComponent,
+    MyNewComponentComponent,
   ],
   imports: [
     BrowserModule,

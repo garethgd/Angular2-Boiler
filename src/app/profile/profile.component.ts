@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from './user-service.service';
+import { UserService } from '../user-modal/user.service';
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -13,6 +14,10 @@ export class ProfileComponent implements OnInit {
 
   user = this.userService.currentUser;
 
+
+  changeUser(newUser) {
+    this.userService.setUser(newUser)
+  }
   ngOnInit() {
   }
 
