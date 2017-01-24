@@ -1,5 +1,5 @@
 # AngularBoiler
-[JSDiaries/JavaScript Diaries](https://www.jsdiaries.com)
+[JSdiaries/JavaScript Diaries](https://www.jsdiaries.com)
 
 
 
